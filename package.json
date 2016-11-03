@@ -1,0 +1,16 @@
+{
+  "title": "ClipSafe",
+  "name": "clipsafe",
+  "version": "0.0.1",
+  "description": "ClipSafe clears your clipboard after you paste so that passwords aren't just sitting around in there",
+  "main": "index.js",
+  "author": "Max Zinkus",
+  "engines": {
+    "firefox": ">=38.0a1",
+    "fennec": ">=38.0a1"
+  },
+  "license": "MIT",
+  "keywords": [
+    "jetpack"
+  ]
+}
