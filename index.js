@@ -10,7 +10,7 @@ function runClipSafe(tab) {
         contentScriptFile: self.data.url("content-script.js")
     });
     worker.port.on("clipsafe trigger", function(payload) {
-            gClipboardHelper.copyString("");
+            gClipboardHelper.copyString(null);
     });
 }
 
