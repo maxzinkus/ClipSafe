@@ -1,7 +1,7 @@
 {
   "title": "ClipSafe",
   "name": "clipsafe",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "ClipSafe clears your clipboard after you paste so that passwords aren't just sitting around in there. Recommended for use with a password manager.",
   "main": "index.js",
   "author": "Max Zinkus",
