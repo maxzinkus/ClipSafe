@@ -14,3 +14,9 @@ Tested on
 * Google
 * Yahoo
 * Mozilla
+
+Thanks
+------
+
+* NateGraff for testing on MacOS
+* Nickago for testig on Windows
