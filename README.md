@@ -19,4 +19,4 @@ Thanks
 ------
 
 * NateGraff for testing on MacOS
-* Nickago for testig on Windows
+* Nickago for testing on Windows
