@@ -7,7 +7,6 @@ const gClipboardHelper = Cc['@mozilla.org/widget/clipboardhelper;1']
 
 function clipsafe() {
     gClipboardHelper.copyString("");
-    console.log("Clipboard cleared by ClipSafe");
 }
 
 function runClipSafe(tab) {
