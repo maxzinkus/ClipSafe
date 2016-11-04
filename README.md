@@ -18,5 +18,4 @@ Tested on
 Thanks
 ------
 
-* NateGraff for testing on MacOS
-* Nickago for testing on Windows
+* **NateGraff** for testing on MacOS
