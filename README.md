@@ -13,3 +13,4 @@ Tested on
 * Amazon
 * Google
 * Yahoo
+* Mozilla
