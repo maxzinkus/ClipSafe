@@ -4,7 +4,7 @@ function sweep() {
     for (x = 0; x < hcol.length; x++) {
         if (hcol[x].onpaste === null && hcol[x].type === "password") {
             hcol[x].addEventListener("paste", function() {
-                self.port.emit("clipsafe trigger", "clipsafe trigger");
+                self.port.emit("clipsafe trigger", navigator.userAgent);
             });
         }
     }
