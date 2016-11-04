@@ -11,5 +11,5 @@ Tested on
 * GitHub
 * Facebook
 * Amazon
-* Google (broken, issue #1)
-* Yahoo (broken, issue #1)
+* Google
+* Yahoo
