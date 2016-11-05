@@ -21,3 +21,4 @@ Thanks
 
 * **NateGraff** for testing on MacOS
 * **Rob W** for awesome code review [https://robwu.nl/]
+* **nickago** for testing on Windows and MacOS
