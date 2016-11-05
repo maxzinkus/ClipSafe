@@ -10,12 +10,7 @@ function runClipSafe(tab) {
         contentScriptFile: self.data.url("content-script.js")
     });
     worker.port.on("clipsafe trigger", function(payload) {
-            if (payload.contains("Linux")) {
-                gClipboardHelper.copyString("");
-            }
-            else {
-                gClipboardHelper.copyString("Clipboard cleared by ClipSafe");
-            }
+            gClipboardHelper.copyString(null);
     });
 }
 
