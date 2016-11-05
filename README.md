@@ -20,3 +20,4 @@ Thanks
 ------
 
 * **NateGraff** for testing on MacOS
+* **Rob W** for awesome code review [https://robwu.nl/]
