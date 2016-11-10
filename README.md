@@ -15,6 +15,7 @@ Tested on
 * Yahoo
 * Mozilla
 * Coinbase
+* Facebook
 
 Thanks
 ------
