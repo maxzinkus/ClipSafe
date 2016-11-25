@@ -6,7 +6,7 @@ pageMod.PageMod({
     include: "*",
     contentScriptFile: self.data.url("content-script.js"),
     onAttach: function(worker) {
-        worker.port.on("clipsafe trigger", function(payload) {
+        worker.port.on("clipsafe trigger", function() {
                 clipboard.set("", "text");
         })
     }
