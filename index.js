@@ -24,6 +24,9 @@ function handlePermission() {
       console.error("ClipSafe: Permissions API returned: " + result.state);
     }
     result.onchange = handlePermission;
+  },
+  function(error) {
+    console.error("ClipSafe Error: " + error);
   });
 }
 
