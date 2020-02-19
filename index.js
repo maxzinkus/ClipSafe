@@ -34,4 +34,8 @@ handlePermission();
 
 /* TODO
  * handle Permission API .request() method once it becomes available :(
+ * Ugh do I need to deal with contenteditable? execCommand copy to clear the cb?
+ * Double ugh, do I need to be a background script to make content editable?
+ * So unclear & inconsistent - there's definitely a lot of churn around this
+ * feature set right now. Probably best to wait until that cools down.
  */
