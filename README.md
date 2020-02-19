@@ -6,22 +6,6 @@ so that passwords aren't just sitting around in there.
 
 Written in a few hours. PRs welcome.
 
-Requirements
-------------
-* `nodejs` with `npm`
-* `npm install jpm`
-
-Tested on
----------
-* GitHub
-* Facebook
-* Amazon
-* Google
-* Yahoo
-* Mozilla
-* Coinbase
-* Facebook
-
 Thanks
 ------
 
