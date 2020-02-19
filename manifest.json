@@ -6,6 +6,8 @@
 
   "description": "Clears your clipboard after you paste into a password field, so you don't accidentally paste that password elsewhere.",
 
+  "permissions": ["https://*/*", "clipboardWrite"],
+
   // "icons": {
   //  "48": "icons/border-48.png"
   // },
