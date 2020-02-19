@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "ClipSafe",
+  "version": "1.0",
+
+  "description": "Clears your clipboard after you paste into a password field, so you don't accidentally paste that password elsewhere.",
+
+  // "icons": {
+  //  "48": "icons/border-48.png"
+  // },
+
+  "content_scripts": [
+    {
+      "matches": ["https://*/*"],
+      "js": ["index.js"]
+    }
+  ]
+
+}

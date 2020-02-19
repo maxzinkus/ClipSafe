@@ -1,13 +1,34 @@
-var self = require("sdk/self");
-var clipboard = require("sdk/clipboard");
-var pageMod = require("sdk/page-mod");
+function handler(event) {
+  if event.target.type.includes("password") {
+    navigator.clipboard.writeText("").then(
+      function() {
+        /* clipboard successfully set */
+        event.stopImmediatePropagation();
+      },
+      function() {
+        /* clipboard write failed */
+        console.error("ClipSafe: Failed to write clipboard. Have you enabled the clipboard-write permission?");
+      });
+  }
+}
 
-pageMod.PageMod({
-    include: "*",
-    contentScriptFile: self.data.url("content-script.js"),
-    onAttach: function(worker) {
-        worker.port.on("clipsafe trigger", function() {
-                clipboard.set("", "text");
-        })
+function handlePermission() {
+  navigator.permissions.query({name:'clipboard-write'}).then(function(result) {
+    if (result.state == 'granted' || result.state == 'prompt') {
+      document.addEventListener('paste', handler);
     }
-});
+    else if (result.state == 'denied') {
+      console.error("ClipSafe: Clipboard write access explicitly denied.");
+    }
+    else {
+      console.error("ClipSafe: Permissions API returned: " + result.state);
+    }
+    result.onchange = handlePermission;
+  });
+}
+
+handlePermission();
+
+/* TODO
+ * handle Permission API .request() method once it becomes available :(
+ */
